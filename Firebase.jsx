@@ -9,12 +9,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAPxcY_cieYXCdys4fVMaI0KlbQuVDSDCA",
-  authDomain: "olx-clone-93b34.firebaseapp.com",
-  projectId: "olx-clone-93b34",
-  storageBucket: "olx-clone-93b34.appspot.com",
-  messagingSenderId: "969042188626",
-  appId: "1:969042188626:web:bc57d4aa327c70f797428b"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGE_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
